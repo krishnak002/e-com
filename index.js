@@ -1,15 +1,14 @@
-import express from "express"
-import dotenv from "dotenv"
+import express from "express";
+import dotenv from "dotenv";
 import db from "./configs/dataBase.js";
 
-const app = express();
-const port = 3000;
+dotenv.config();
 
-app.listen(port,(err)=>{
-    if(err){
-        console.log(error.message);
-    }else{
-        console.log("server start");
-        console.log("http://localhost:",+port);
-    }
-})
+const app = express();
+const port = process.env.PORT || 3000;
+
+db();
+
+app.listen(port, () => {
+    console.log(`Server start on http://localhost:${port}`);
+});
