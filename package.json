@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "day-8-ems",
   "version": "1.0.0",
   "description": "",
@@ -27,5 +28,16 @@
     "@types/express": "^5.0.6",
     "@types/mongoose": "^5.11.96",
     "@types/node": "^26.0.0"
+=======
+  "name": "day-5-ems",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "client:build": "cd client && npm run build",
+    "client:lint": "cd client && npm run lint",
+    "server": "cd server && npm run dev",
+    "start": "cd server && npm start"
+>>>>>>> 0d88185d5229988f5468e13f7849294142053e6b
   }
 }
