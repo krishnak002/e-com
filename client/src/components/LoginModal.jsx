@@ -70,7 +70,7 @@ export default function LoginModal({ open, close, authenticate }) {
           </button>
           <button
             type="button"
-            className="auth-switch"
+            className="auth-switch btn btn-link"
             onClick={() => {
               setMode(mode === "login" ? "register" : "login");
               setError("");
